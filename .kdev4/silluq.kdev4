@@ -25,14 +25,24 @@ Name=silluq
 Type=Native Application
 
 [Launch][Launch Configuration 0][Data]
-Arguments=
+Arguments="test=/tmp/lol.silluq" "foo=/tmp/lol.silluq"
+Break on Start=false
 Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x02\x00\x00\x00\x0c\x00s\x00i\x00l\x00l\x00u\x00q\x00\x00\x00\x0c\x00s\x00i\x00l\x00l\x00u\x00q)
 Dependency Action=Build
 EnvironmentGroup=
 Executable=file:///home/beacon515l/silluq
 External Terminal=konsole --noclose --workdir %workdir -e %exe
+LLDB Arguments=
+LLDB Config Script=
+LLDB Environment=
+LLDB Executable=
+LLDB Inherit System Env=true
+LLDB Remote Debugging=false
+LLDB Remote Path=
+LLDB Remote Server=
 Project Target=silluq,silluq
-Use External Terminal=false
+Start With=ApplicationOutput
+Use External Terminal=true
 Working Directory=
 isExecutable=false
 
